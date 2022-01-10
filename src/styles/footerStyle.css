@@ -1,0 +1,122 @@
+.footerContariner {
+  margin: 0px 12.8vw;
+  height: 15vh;
+  background-color: var(--grayPrimary);
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 20px;
+}
+.footerRightDiv {
+  width: 50%;
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerMiddleDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  padding-top: 1.5%;
+
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text);
+}
+.footerLogoContainer {
+  width: 14%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.footerLogo {
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  align-self: center;
+  display: flex;
+}
+.footerLogo > svg > path {
+  fill: var(--primary-text);
+}
+.footerPStyle {
+  align-self: flex-start;
+  text-align: start;
+  margin-left: 05%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footerPStyle2 {
+  color: var(--black);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.footerMiddleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .footerContariner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    margin: 03vh 3vh;
+    flex-direction: row-reverse;
+  }
+  .footerMiddleContainer {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .footerRightDiv {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .footerLogoContainer {
+    align-items: flex-start;
+    width: 20%;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+  .footerMiddleDiv {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1128px) {
+  .footerContariner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    margin: 03vh 3vh;
+    flex-direction: row-reverse;
+  }
+  .footerMiddleContainer {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .footerRightDiv {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .footerLogoContainer {
+    align-items: flex-start;
+    width: 20%;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+  .footerMiddleDiv {
+    width: 80%;
+  }
+}

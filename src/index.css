@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anonymous Pro", monospace;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--mainButtonHover);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro");
+
+:root {
+  --primary-text: #0e0e0e;
+  --Secoundary-text: #fafafa;
+  --background: #fafafa;
+
+  --mainButton: #0a33ff;
+  --mainButtonHover: #0a60ff;
+  --fixed-white: #fafafa;
+  --secoundaryButton: #0e0e0e;
+
+  --grayPrimary: #e2e2e2;
+  --graySecoundary: #c4c4c4;
+}
+
+[data-theme="dark"] {
+  --primary-text: #fafafa;
+  --Secoundary-text: #0e0e0e;
+  --background: #0e0e0e;
+
+  --mainButton: #0a33ff;
+  --mainButtonHover: #0a60ff;
+  --fixed-white: #fafafa;
+  --secoundaryButton: #fafafa;
+
+  --grayPrimary: #1f1f1f;
+  --graySecoundary: #303030;
+}

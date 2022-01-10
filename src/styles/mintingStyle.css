@@ -1,0 +1,381 @@
+.mintingBackground {
+  background-color: var(--background);
+
+  padding-bottom: 01px;
+}
+.mintingMainContainer {
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.mintingRightDiv {
+  background-color: var(--grayPrimary);
+
+  margin: 03vh 12.8vw 03vh 0px;
+  min-height: 600px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-end;
+}
+.mintingLefttDiv {
+  padding-top: 03vh;
+  margin-left: 10vw;
+  width: 40vw;
+}
+.mintingImageHolder {
+  margin: 03vh 0vh 03vh 12.8vw;
+  width: 55%;
+  min-width: 500px;
+  min-height: 600px;
+
+  background-color: var(--graySecoundary);
+
+  display: flex;
+}
+
+.mintingImageBottomBar {
+  height: 60px;
+  width: 100%;
+  background-color: #5e5e5e;
+  align-self: flex-end;
+}
+
+.mintingTitle {
+  padding-left: 06%;
+  padding-bottom: 3%;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+.mintingDescription {
+  padding-bottom: 1.2em;
+  padding-left: 06%;
+  font-size: 1rem;
+  padding-right: 40%;
+  color: var(--primary-text);
+}
+
+.mintingButtonDiv {
+  margin-right: 0%;
+  display: flex;
+
+  padding-left: 03vh;
+  padding-bottom: 10vh;
+
+  flex-direction: column;
+}
+
+.mintingButtonDiv2 {
+  display: flex;
+
+  flex-direction: row;
+}
+
+.amountDiv {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.plusController {
+  color: var(--primary-text);
+  background-color: var(--graySecoundary);
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  border-style: none;
+  font-weight: bold;
+
+  transition: 50ms ease-in-out;
+}
+
+.minusController {
+  color: var(--primary-text);
+  background-color: var(--graySecoundary);
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 10px;
+  border-style: none;
+  font-weight: bold;
+
+  transition: 50ms ease-in-out;
+}
+
+.displayAmount {
+  color: var(--primary-text);
+  background-color: var(--graySecoundary);
+
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.mintingButtonStyleBlue {
+  color: var(--fixed-white);
+  background-color: var(--mainButton);
+  height: 40px;
+  width: 150px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+  transition: 250ms;
+}
+
+.mintingButtonStyleBlue:hover {
+  /* transition: 500ms; */
+  background-color: var(--mainButtonHover);
+}
+
+.mintingButtonStyleBlack {
+  color: var(--Secoundary-text);
+  background-color: var(--secoundaryButton);
+  height: 40px;
+  width: 270px;
+
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+}
+
+.displayedEdition {
+  align-self: flex-end;
+  padding: 01% 02%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+.descriptionContariner {
+  margin: 0px 12.8vw 20px 12.8vw;
+  height: 19vh;
+
+  background-color: var(--grayPrimary);
+  display: flex;
+}
+.mintingPrice {
+  color: var(--primary-text);
+  padding-left: 06%;
+  font-size: 0.9rem;
+  margin-bottom: 03%;
+}
+.mintingEnding {
+  padding-left: 06%;
+  font-size: 0.9rem;
+
+  font-weight: bold;
+}
+
+.collectionInfo {
+  display: flex;
+  width: 33.33%;
+  font-size: 0.9rem;
+  flex-direction: column;
+
+  text-align: start;
+
+  justify-content: center;
+  align-self: center;
+  padding-left: 10%;
+  color: var(--primary-text);
+}
+
+.pBoldSpan {
+  font-weight: bold;
+}
+.collectionP {
+  padding: 03% 0%;
+}
+
+.collectionDescription {
+  align-self: center;
+  color: var(--primary-text);
+  width: 33.33%;
+  font-size: 0.9rem;
+}
+.collectionSocials {
+  font-weight: bold;
+
+  width: 33.33%;
+
+  display: flex;
+
+  flex-flow: column;
+
+  padding-left: 12.5%;
+
+  align-items: flex-start;
+
+  align-self: center;
+  justify-items: flex-end;
+}
+
+.socialStyle {
+  font-style: italic;
+  color: var(--primary-text);
+  font-size: 1rem;
+  text-align: center;
+
+  align-self: flex-end;
+
+  padding: 7% 0%;
+}
+
+.socialStyle:hover {
+  color: var(--mainButtonHover);
+}
+
+/* mobile version stuff here */
+
+@media (max-width: 600px) {
+  .mintingMainContainer {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .mintingRightDiv {
+    margin: 03vh 3vh;
+    flex-flow: column wrap;
+
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .mintingImageHolder {
+    background-color: rgb(146, 76, 76);
+    margin: 0px;
+    display: none;
+  }
+  .mintingButtonDiv {
+    display: flex;
+    padding-left: 0vh;
+    padding-bottom: 06vh;
+  }
+
+  .descriptionContariner {
+    margin: 0vh 3vh 3vh 3vh;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .collectionInfo {
+    width: 100%;
+
+    padding-bottom: 05%;
+    padding-top: 05%;
+    align-self: flex-start;
+  }
+  .collectionDescription {
+    width: 100%;
+    align-self: flex-start;
+
+    padding: 10% 30% 10% 10%;
+  }
+
+  .socialStyle {
+    font-size: 0.9rem;
+  }
+  .collectionSocials {
+    font-size: 0.8rem;
+    width: 100%;
+    padding-top: 05%;
+    padding-left: 10%;
+    padding-bottom: 05%;
+  }
+  .displayedEdition {
+    padding: 03%;
+  }
+}
+
+@media (max-width: 1128px) {
+  .mintingMainContainer {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .mintingRightDiv {
+    margin: 03vh 3vh;
+    flex-flow: column wrap;
+
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .mintingImageHolder {
+    background-color: rgb(146, 76, 76);
+    margin: 0px;
+    display: none;
+  }
+  .mintingButtonDiv {
+    display: flex;
+    padding-left: 0vh;
+    padding-bottom: 06vh;
+  }
+
+  .descriptionContariner {
+    margin: 0vh 3vh 3vh 3vh;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .collectionInfo {
+    width: 100%;
+
+    padding-bottom: 05%;
+    padding-top: 05%;
+    align-self: flex-start;
+  }
+  .collectionDescription {
+    width: 100%;
+    align-self: flex-start;
+
+    padding: 10% 30% 10% 10%;
+  }
+
+  .socialStyle {
+    font-size: 0.9rem;
+  }
+  .collectionSocials {
+    font-size: 0.8rem;
+    width: 100%;
+    padding-top: 05%;
+    padding-left: 10%;
+    padding-bottom: 05%;
+  }
+  .displayedEdition {
+    padding: 03%;
+  }
+}

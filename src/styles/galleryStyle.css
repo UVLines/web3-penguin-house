@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro");
+body {
+  font-family: "Anonymous Pro", monospace;
+}
+
+.galleryBackground {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(252, 0, 0, 0.89);
+}
+.galleryMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.blackButton {
+  color: var(--Secoundary-text);
+  background-color: var(--secoundaryButton);
+  height: 40px;
+  width: 150px;
+  border-style: none;
+  margin: 90px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+}
+
+.galleryImageHolder {
+  width: 250px;
+  height: 300px;
+
+  background-color: var(--grayLight2);
+  margin: 20px 20px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.galleryTitle {
+  text-align: center;
+
+  margin-top: 07vh;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.galleryDescription {
+  font-size: 1.2rem;
+
+  margin: 0vw 25vw;
+
+  text-align: center;
+}
+
+.galleryButtonStyleBlue {
+  color: var(--white);
+  background-color: var(--regularBlue);
+  height: 35px;
+  width: 150px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 250ms;
+}
+
+.galleryButtonStyleBlue:hover {
+  background-color: var(--focusBlue);
+  transform: scale(1.05);
+}
+
+.searchInput {
+  color: var(--darkGray);
+  background-color: var(--white);
+  height: 35px;
+  width: 60vh;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+  padding-left: 40px;
+  font-weight: bold;
+  border: 2px solid var(--grayLight2);
+
+  transition: 250ms ease-in-out;
+}
+.searchInput::placeholder {
+  color: var(--grayLight2);
+
+  transition: 250ms ease-in-out;
+}
+
+.searchInput:focus {
+  height: 35px;
+  width: 60vh;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+  padding-left: 40px;
+  font-weight: bold;
+  border: 2px solid var(--darkGray);
+  outline: none;
+  transition: 250ms ease-in-out;
+}
+
+.searchInput:focus::placeholder {
+  color: var(--darkGray);
+
+  transition: 250ms ease-in-out;
+}
+.searchDiv {
+  display: flex;
+  justify-content: center;
+}
+.filtersDiv {
+  display: flex;
+  justify-content: center;
+
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.galleryButtonStyleBlack {
+  color: var(--white);
+  background-color: var(--black);
+  height: 40px;
+  width: 140px;
+
+  border-style: none;
+  margin: 5px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+}
+
+.galleryButtonStyleGray {
+  color: var(--white);
+  background-color: var(--grayLight2);
+  height: 40px;
+  width: 140px;
+
+  border-style: none;
+  margin: 5px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 200ms ease-in-out;
+}
+
+.galleryButtonStyleGray:hover {
+  background-color: var(--darkGray);
+}
+
+.nftShowcase {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallerySocials {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px 20px;
+  font-size: 2rem;
+}
+
+a {
+  color: var(--black);
+}
+
+.galleryContainer {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  background-color: var(--background);
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--primary-text);
+}
+/* mobile version stuff here */
+
+@media (max-width: 600px) {
+  .galleryContainer {
+    display: flex;
+    height: 91vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1128px) {
+  .galleryContainer {
+    display: flex;
+    height: 91vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+}

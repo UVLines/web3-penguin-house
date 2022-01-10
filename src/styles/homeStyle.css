@@ -1,0 +1,196 @@
+body {
+  font-family: "Anonymous Pro", monospace;
+}
+.homeWrapper {
+  background-color: var(--background);
+  height: 91vh;
+}
+.mainContainer {
+  justify-content: space-between;
+  display: flex;
+  background-color: var(--background);
+}
+
+.lefttDiv {
+  padding-top: 03vh;
+  margin-left: 10vw;
+  width: 40vw;
+}
+.rightDiv {
+  width: 90vw;
+}
+.rightContainer {
+  margin-top: 27%;
+  display: flex;
+  flex-direction: column;
+
+  justify-self: center;
+}
+
+.imageHolder {
+  width: 500px;
+  height: 600px;
+  background-color: var(--graySecoundary);
+  margin: 30px 55px;
+  display: flex;
+}
+
+.imageBottomBar {
+  height: 60px;
+  width: 100%;
+  background-color: var(--darkGray);
+  align-self: flex-end;
+}
+
+.title {
+  color: var(--primary-text);
+  padding-left: 03%;
+  padding-bottom: 02%;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.Description {
+  color: var(--primary-text);
+  padding-left: 03%;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  padding-right: 40%;
+}
+
+.buttonDiv {
+  margin-right: 0%;
+  padding-left: 02%;
+  display: flex;
+}
+
+.connectButtonStyle {
+  color: var(--white);
+  background-color: var(--regularBlue);
+
+  height: 40px;
+  width: 180px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 250ms;
+}
+
+.addressButtonStyle {
+  color: var(--white);
+  background-color: var(--regularBlue);
+
+  height: 40px;
+  width: 180px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 250ms;
+}
+
+.buttonStyleBlue {
+  color: var(--fixed-white);
+  background-color: var(--mainButton);
+
+  height: 40px;
+  width: 180px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 250ms;
+}
+
+.buttonStyleBlue:hover {
+  background-color: var(--mainButtonHover);
+}
+
+.buttonStyleBlack {
+  color: var(--Secoundary-text);
+  background-color: var(--secoundaryButton);
+  height: 40px;
+  width: 180px;
+
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+
+  transition: 250ms;
+}
+
+.buttonStyleBlack:hover {
+  transform: scale(1.01);
+}
+
+/* mobile version stuff here */
+
+@media (max-width: 1366px) {
+  .homeWrapper {
+    height: 91vh;
+  }
+
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .lefttDiv {
+    padding-top: 04vh;
+    padding-bottom: 04vh;
+    margin-left: 0vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .rightDiv {
+    width: 100vw;
+  }
+
+  .imageHolder {
+    width: 250px;
+    height: 350px;
+    background-color: var(--graySecoundary);
+    margin: 0px 0px;
+    display: flex;
+  }
+
+  .rightContainer {
+    margin-top: 0vh;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0px 20px;
+  }
+
+  .title {
+    padding-left: 00%;
+    padding-bottom: 03%;
+    font-size: 1.5rem;
+  }
+
+  .Description {
+    padding-left: 20%;
+    font-size: 1rem;
+    padding-right: 20%;
+  }
+
+  .buttonDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}

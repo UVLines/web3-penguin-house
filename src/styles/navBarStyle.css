@@ -1,0 +1,238 @@
+.navContainer {
+  background-color: var(--background);
+  display: flex;
+  height: 09vh;
+
+  padding-top: 02px;
+  justify-content: space-between;
+  align-content: center;
+}
+.navLinks {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  color: var(--primary-text);
+  padding: 10px 0px;
+}
+
+.navLinks2 {
+  color: var(--primary-text);
+}
+.logoStyle {
+  display: flex;
+
+  align-self: center;
+}
+.logo {
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a > svg > path {
+  fill: var(--primary-text);
+}
+
+.logo a > svg > path:hover {
+  fill: var(--mainButtonHover);
+}
+
+.blueButton {
+  color: var(--fixed-white);
+  background-color: var(--mainButton);
+  height: 40px;
+  width: 150px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+  transition: 250ms;
+}
+
+.blueButton:hover {
+  background-color: var(--mainButtonHover);
+}
+
+.navBlackButton {
+  color: var(--Secoundary-text);
+  background-color: var(--secoundaryButton);
+  height: 40px;
+  width: 150px;
+  border-style: none;
+  margin: 10px 20px;
+  border-radius: 50px;
+
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1rem;
+}
+
+.themeButton {
+  color: var(--primary-text);
+  background-color: var(--grayPrimary);
+  height: 40px;
+  width: 40px;
+
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+
+  box-shadow: 1px 0px 10px 2px hsla(0, 0%, 0%, 0.2);
+
+  font-family: "Anonymous Pro", monospace;
+}
+
+.themeButton:hover {
+  box-shadow: 1px 0px 10px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+.connectionDiv {
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+}
+
+.navContainer .burgerIcon {
+  display: none;
+}
+
+.navContainer .navLinks #hidden {
+  display: flex;
+}
+.navItems {
+  display: flex;
+  width: 60%;
+  background-color: green;
+  justify-content: flex-end;
+}
+
+.menuIconDiv {
+  display: none;
+
+  justify-self: flex-end;
+
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+.hamburgerMenuIcon {
+  color: var(--primary-text);
+  font-size: 2rem;
+}
+
+.menuIconStyle {
+  color: var(--primary-text);
+  font-size: 2rem;
+}
+
+.menuIconStyle2 {
+  color: var(--primary-text);
+  margin: 5px 10px 5px 5px;
+  font-size: 1.7rem;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.desktopConnectionDiv {
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+}
+
+.desktopPopup {
+  position: fixed;
+  width: 300px;
+  background-color: var(--graySecoundary);
+  right: 17px;
+  top: 09vh;
+  z-index: 2;
+  border-radius: 15px;
+  box-shadow: 1px 0px 10px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+.closeIconDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+}
+
+.themeIconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.disconnectDiv {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .menuIconDiv {
+    display: flex;
+  }
+  .navContainer .burgerIcon {
+    display: flex;
+  }
+  .navLinks {
+    width: 100%;
+    height: 100%;
+  }
+  .navContainer .navLinks {
+    display: none;
+  }
+  .navContainer .navLinks2 {
+    align-items: flex-end;
+    text-align: center;
+  }
+  .navContainer {
+    padding-top: 20px;
+    padding-left: 34.1vw;
+    justify-content: space-between;
+  }
+  .connectionDiv {
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileNav {
+    display: flex;
+
+    box-shadow: 1px 0px 10px 2px hsla(0, 0%, 0%, 0.4);
+
+    background-color: var(--graySecoundary);
+    position: fixed;
+    align-items: flex-start;
+    justify-content: center;
+    width: 85vw;
+    right: 30px;
+    top: 80px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  .desktopConnectionDiv {
+    display: none;
+  }
+  .desktopPopup {
+    display: none;
+  }
+}
