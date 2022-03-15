@@ -9,7 +9,7 @@ The penguin house is a dApp that serve as a front-end minter for ERC-721 contrac
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/UVLines/web3-penguin-house
+   git clone https://github.com/retconned/web3-penguin-house
    ```
 
 2. Change directory to the project folder
