@@ -11,7 +11,6 @@ import Home from "./Home";
 import Minting from "./Minting";
 import Gallery from "./Gallery";
 import Modal from "./components/Modal";
-// import MadeWith from "./components/MadeWith";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -174,7 +173,6 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </Router>
-      {/* <MadeWith /> */}
     </div>
   );
 }
