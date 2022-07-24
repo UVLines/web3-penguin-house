@@ -4,6 +4,10 @@
 
 The penguin house is a dApp that serve as a front-end minter for ERC-721 contracts & A token Gallery for all token holders
 
+# Screenshot
+
+![screenshot of the penguin house](https://i.imgur.com/WOSAAjc.png)
+
 # Installation
 
 1. Clone the repo
